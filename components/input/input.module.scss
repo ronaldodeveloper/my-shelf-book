@@ -1,0 +1,64 @@
+.inputContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+
+    .inputLabel{
+       color: #4D4D4D;
+       font-size: 14px;
+       font-weight: 500;
+
+        @media (min-width: 992px){
+            font-size: 16px;
+        }
+    }
+
+    .inputElement{
+        border: 1px solid #DCD9D9;
+        border-radius: 8px;
+        padding: 16px;
+        font-size: 16px;
+        font-weight: 400;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+
+    .inputIcon{
+        display: none;
+    }
+
+
+    &.InputPassword{
+        position: relative;
+
+        .inputIcon{
+            width: max-content;
+            position: absolute;
+            right: 14px;
+            bottom: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            padding: 0;
+
+            & > img{
+                width: 22px;
+                padding: 12px 0;
+            }
+
+            &:focus{
+                outline: none;
+                border: 0;
+            }
+        }
+    }
+}

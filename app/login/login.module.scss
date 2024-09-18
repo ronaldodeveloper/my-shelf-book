@@ -1,0 +1,98 @@
+
+.main{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(250,124,84);
+    background: linear-gradient(162deg, rgba(250,124,84,1) 44%, rgba(236,44,90,1) 100%);
+    padding: 40px 0;
+
+    @media (min-width: 992px){
+      padding: 80px 0;
+    }
+
+    &_content{
+        width: 86%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 24px;
+        background-color: white;
+        border-radius: 10px;
+
+        @media (min-width: 992px) {
+            max-width: 580px;
+            padding: 64px;     
+        }
+
+        .logo{
+            max-width: 120px;
+            margin-bottom: 24px;
+           
+           @media (min-width: 992px){
+            max-width: 150px;
+            margin-bottom: 62px;
+           }
+        }
+
+        .title{
+            font-size: 20px;
+            line-height: normal;
+            margin-bottom: 16px;
+        }
+        .subtitle{
+            margin-bottom: 42px;
+            color: #ABABAB;
+        }
+        .link{
+            color: #4D4D4D;
+        }
+
+        .registerContainer{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 0;
+            font-size: 12px;
+
+            @media (min-width: 992px){
+               font-size: 16px;
+            }
+        }
+
+        .form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 24px;
+
+
+            .rememberContainer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 12px;
+
+                    @media (min-width: 992px){
+                    font-size: 16px;
+                    }
+
+                .inputCheckboxContent{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px; 
+
+                    .inputCheckbox{
+                        accent-color: #DF7D3A;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}

@@ -1,0 +1,69 @@
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    outline: none;
+    padding: 0 40px;
+    transition: all 0.4s ease;
+
+    &:focus{
+        border: 0;
+        outline: none;
+    }
+
+    &.orange{
+        background-color: #FA7C54;
+
+        &:hover{
+            background-color: darken(#FA7C54, 10%);
+        }
+    }
+    &.green{
+        background-color: #42BB4E;
+
+        &:hover{
+            background-color: darken(#42BB4E, 10%);
+        }
+    }
+    &.gray{
+        background-color: #A0A0A0;
+
+        &:hover{
+            background-color: darken(#A0A0A0, 10%);
+        }
+    }
+    &.darkgray{
+        background-color: #4D4D4D;
+
+        &:hover{
+            background-color: darken(#4D4D4D, 10%);
+        }
+    }
+    &.outline{
+        border: 1px solid #FA7C54;
+        background-color: transparent;
+        color: #FA7C54;
+
+        &:hover{
+            background-color: darken(#FA7C54, 10%);
+            color: white;
+        }
+    }
+
+    &.normal{
+        width: max-content;
+    }
+
+    &.full{
+        width: 100%;
+    }
+}

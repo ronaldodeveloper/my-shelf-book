@@ -1,0 +1,44 @@
+.cardDefault{
+    width: max-content;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+
+    &_image{
+        margin-bottom: 12px;
+        border-radius: 6px;
+    }
+
+    &_title{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+        color: #4D4D4D;
+        margin-bottom: 6px;
+        margin-top: 0;
+
+        max-width: 124px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap
+    }
+    &_author, &_year{
+        font-size: 10px;
+        font-weight: 400;
+        line-height: normal;
+        color: #4D4D4D;
+        margin-bottom: 6px;
+        margin-top: 0;
+        gap: 6px;
+    }
+    &_ratings{
+        font-size: 10px;
+        font-weight: 400;
+        line-height: normal;
+        color: #4D4D4D;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
