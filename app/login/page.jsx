@@ -25,13 +25,13 @@ export default function Login() {
                             <input type="checkbox" name="remember" className={styles.inputCheckbox} id="remember"/>
                             Remember me
                         </label>
-                        <Link href="/forgot-password" className={styles.link}>Forgot password?</Link>
+                        <Link href="/register" className={styles.link}>Forgot password?</Link>
                     </div>
                     <Button tamanho="full" variante="orange">Login</Button>
                 </form>
                 
                 <p className={styles.registerContainer}>
-                    <span>New User? <Link href="/forgot-password" className={styles.link}>Register Here</Link></span>
+                    <span>New User? <Link href="/register" className={styles.link}>Register Here</Link></span>
                     <span>Use as Guest </span>
                 </p>
                 

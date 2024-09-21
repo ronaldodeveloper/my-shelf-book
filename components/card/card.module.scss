@@ -1,5 +1,5 @@
 .cardDefault{
-    width: max-content;
+    width: 100%;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -9,6 +9,9 @@
     &_image{
         margin-bottom: 12px;
         border-radius: 6px;
+        width: 100%;
+        height: auto;
+        flex: 1;
     }
 
     &_title{

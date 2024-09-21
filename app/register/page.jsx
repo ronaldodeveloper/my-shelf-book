@@ -25,7 +25,7 @@ export default function Register() {
                             <input type="checkbox" name="remember" className={styles.inputCheckbox} id="remember"/>
                             Remember me
                         </label>
-                        <Link href="/forgot-password" className={styles.link}>Forgot password?</Link>
+                        <Link href="/register" className={styles.link}>Forgot password?</Link>
                     </div>
                     <Button tamanho="full" variante="orange">Register</Button>
                 </form>
@@ -34,8 +34,6 @@ export default function Register() {
                     <span>Already a User? <Link href="/login" className={styles.link}>Login now </Link></span>
                     <span>Use as Guest </span>
                 </p>
-                
-                    
             </div>
         </section>
     );

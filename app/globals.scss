@@ -11,4 +11,51 @@
 body{
     background-color: #F3F3F7;
     color: #4D4D4D;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+
+}
+
+.main{
+    flex: 1;
+    overflow-y: hidden;
+    
+
+    @media (min-width: 992px) {
+        margin-left: 340px;
+        margin-top: 32px;
+    }
+}
+
+.detalhesTopo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 32px;
+    background-color: #FA7C54;
+    z-index: 11;
+    display: none;
+
+    @media (min-width: 992px) {
+        display: block;
+    }
+}
+
+
+.swiper{
+
+    .swiper-wrapper{
+        display: flex;
+    }
+    .swiper-slide{
+        height: auto;
+        display: flex;
+    }
 }
