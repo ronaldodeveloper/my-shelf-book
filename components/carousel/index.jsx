@@ -7,17 +7,17 @@ import Card from "@/components/card";
 
 
 export default function Carousel({data}) {
-    console.log(data)
+    // console.log(data)
     
     return (
         <Swiper 
         className={styles.carousel}
         spaceBetween={16}
         slidesPerView={6.5}
-        FreeMode={true}
+        freeMode={true}
         // grabCursor={true}
-        onSlideChange={() => console.log('')}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log('')}
+        // onSwiper={(swiper) => console.log(swiper)}
         breakpoints={{
           0: {
             slidesPerView: 2.5,
@@ -44,11 +44,13 @@ export default function Carousel({data}) {
         }}
       >
         {
-          data && data.map((book) => (
-            <SwiperSlide>
-              <Card key={book.id * book.title.length} title={book.title}  author={book.author} year={book.publishDate.year}  ratings={book.ratings} image={book.urlImage}/>
+          data && data.map((book, index) => {
+            return (
+            <SwiperSlide key={`item-${index}`}>
+              <Card title={book.title}  author={book.author} year={book.publishDate.year}  ratings={book.ratings} image={book.urlImage}/>
             </SwiperSlide>
-          ))
+          )}
+        )
         }
       </Swiper>
     )

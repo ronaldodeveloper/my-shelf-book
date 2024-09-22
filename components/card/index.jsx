@@ -8,7 +8,7 @@ export default function Card({ title, image, author, year, ratings }) {
     
     return (
         <div className={styles.cardDefault}>
-            <Image src={`/image/${image}`} alt={`image from the book: ${title}`} className={styles.cardDefault_image}  width={124} height={170}/>
+            <Image src={`/image/${image}`} alt={`image from the book: ${title}`} className={styles.cardDefault_image}  width={124} height={170} priority/>
             <h3 className={styles.cardDefault_title}>{title}</h3>
             <p className={styles.cardDefault_author}>
                 <span>{author}</span>

@@ -3,10 +3,20 @@
 import Image from "next/image";
 import styles from "./header.module.scss";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
     const [isOpen, setIsOpen]= useState(false)
+
+    useEffect(()=>{
+        if(!isOpen){
+            document.documentElement.style.overflow = 'auto';
+            document.body.scroll = "yes";
+        }else{
+            document.documentElement.style.overflow = 'hidden';
+            document.body.scroll = "no";
+        }
+    },[isOpen])
     
     return ( 
             <header className={styles.header}>
