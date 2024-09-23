@@ -69,6 +69,12 @@ body{
 
 .swiper.carouselBanner{
     margin: 0;
+    overflow: visible;
+
+    @media (min-width: 1200px){
+    overflow: hidden;
+    }
+
     .swiper-pagination{
         width: auto;
         left: 32px;
