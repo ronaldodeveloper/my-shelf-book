@@ -17,16 +17,16 @@ export default function Carousel({data, isNewArrival}) {
         freeMode={true}
         breakpoints={{
           0: {
-            slidesPerView: 2.5,
+            slidesPerView: 2.2,
           },
           576: {
-            slidesPerView: 3.5,
-          },
-          768: {
-            slidesPerView: 4,
+            slidesPerView: 3.1,
           },
           992: {
-            slidesPerView: 4.2,
+            slidesPerView: 3.5,
+          },
+          1200: {
+            slidesPerView: 4.5,
           }
         
         }}

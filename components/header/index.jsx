@@ -53,8 +53,8 @@ export default function Header() {
                         <span>My Shelf</span>
                     </Link>
                     <Link
-                        href="/Contribute"
-                        className={`${styles.link} ${pathname === '/Contribute' ? styles.active : ''}`}>
+                        href="/contribute"
+                        className={`${styles.link} ${pathname === '/contribute' ? styles.active : ''}`}>
                         <span className="icone-contribute"></span>
                         <span>Contribute</span>
                     </Link>

@@ -57,6 +57,7 @@
     &:hover{
         .profileContentLinks{
             display: flex;
+            z-index: 2;
         }
     }
 
