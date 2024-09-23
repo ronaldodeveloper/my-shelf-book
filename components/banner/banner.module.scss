@@ -1,0 +1,44 @@
+.banner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #EB5231, #571FCF);
+    color: white;
+    min-height: 200px;
+
+    .title{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 128%;
+        margin-bottom: 12px;
+    }
+    .text{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 150%;
+        margin-bottom: 18px;
+    }
+    .author{
+        font-size: 20px;
+        font-weight: 300;
+        text-align: right;
+        line-height: 128%;
+    }
+
+    &.bgGradient_0{
+        background: linear-gradient(135deg, #EB5231, #571FCF);
+    }
+    &.bgGradient_1{
+        background: linear-gradient(135deg, #31a1eb, #120089);
+    }
+    &.bgGradient_2{
+        background: linear-gradient(135deg, #ba31eb, #571FCF);
+    }
+    &.bgGradient_3{
+        background: linear-gradient(135deg, #eb3197, #571FCF);
+    }
+    // @media (min-width: 992px){  }
+
+}

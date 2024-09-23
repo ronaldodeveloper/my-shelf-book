@@ -34,17 +34,7 @@ $detalhes: 32px;
             background-color: #FA7C54;
         }
     }
-    // &::after{
-    //     @media (min-width: 992px){
-    //         content: "";
-    //         position: absolute;
-    //         top: 0;
-    //         left: 0;
-    //         right: 0;
-    //         height: $detalhes;
-    //         background-color: #FA7C54;
-    //     }
-    // }
+
    
     .logo{
         width: 56px;
@@ -191,6 +181,7 @@ $detalhes: 32px;
                 transition: .25s ease-in-out;
 
                 &:hover{color: #4D4D4D;}
+                &.active{color: #4D4D4D;}
             }
         }
 

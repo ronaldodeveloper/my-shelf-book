@@ -30,7 +30,8 @@ export const books = [
             "inShelfText": "CS A-15",
             "borrowed": false,
             "borrowedUser": "Sriram"
-        }
+        },
+        "newArrival": true
     },
     {
         "id": 2,
@@ -63,7 +64,8 @@ export const books = [
             "inShelfText": "CS A-15",
             "borrowed": true,
             "borrowedUser": "Sriram"
-        }
+        },
+        "newArrival": true
     },
     {
         "id": 3,
@@ -96,7 +98,8 @@ export const books = [
             "inShelfText": "CS A-15",
             "borrowed": true,
             "borrowedUser": "Sriram"
-        }
+        },
+        "newArrival": true
     },
     {
         "id": 4,
@@ -129,7 +132,8 @@ export const books = [
             "inShelfText": "CS A-15",
             "borrowed": true,
             "borrowedUser": "Sriram"
-        }
+        },
+        "newArrival": false
     },
     {
         "id": 5,
@@ -162,7 +166,8 @@ export const books = [
             "inShelfText": "CS A-15",
             "borrowed": true,
             "borrowedUser": "Sriram"
-        }
+        },
+        "newArrival": false
     },
     {
         "id": 6,
@@ -194,7 +199,8 @@ export const books = [
             "inShelfText": "CS A-15",
             "borrowed": false,
             "borrowedUser": "Sriram"
-        }
+        },
+        "newArrival": false
     },
     {
         "id": 7,
@@ -226,7 +232,8 @@ export const books = [
             "inShelfText": "CS A-15",
             "borrowed": false,
             "borrowedUser": "Sriram"
-        }
+        },
+        "newArrival": true
     },
     {
         "id": 8,
@@ -258,6 +265,7 @@ export const books = [
             "inShelfText": "CS A-15",
             "borrowed": true,
             "borrowedUser": "John Doe"
-        }
+        },
+        "newArrival": true
     }
 ];

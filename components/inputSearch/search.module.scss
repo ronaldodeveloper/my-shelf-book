@@ -1,8 +1,17 @@
 .SearchContainer{
-    width: 100%;
     display: flex;
-    box-shadow : 0px 0 4px 0 rgba(0, 0, 0, 0.25);
+    flex: 1;
+    box-shadow : 0px 0 4px 0 rgba(0, 0, 0, 0.155);
     border-radius: 50px;
+    max-height: 40px;
+
+    @media (min-width: 992px){
+        max-height: 48px;
+    }
+
+    @media (max-width: 575px){
+        order: 2;
+    }
 
     .selectElement{
         appearance: none;
@@ -16,8 +25,12 @@
         background: url("../../public/image/seta-select.svg") no-repeat center right 16px #F7F7FA;
         width: max-content;
 
-
         @media (min-width: 992px){
+            font-size: 18px; 
+            padding: 12px 28px;
+        }
+
+        @media (min-width: 1366px){
             font-size: 20px; 
             padding: 12px 32px;
         }
@@ -40,6 +53,10 @@
         background-size: 20px;
 
         @media (min-width: 992px){
+            font-size: 18px; 
+        }
+
+        @media (min-width: 1366px){
             font-size: 20px; 
         }
 

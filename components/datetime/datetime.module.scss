@@ -1,0 +1,42 @@
+
+.containerData{
+    display: none;
+    gap: 24px;
+    padding: 12px 32px;
+    border: 1px solid #DCD9D9;
+    color: #4D4D4D;
+    border-radius: 50px;
+    box-shadow : 0px 0 4px 0 rgba(0, 0, 0, 0.155);
+    background-color: white;
+    max-height: 48px;
+    font-size: 14px;
+
+    @media (min-width: 1200px){
+        gap: 24px;
+        padding: 12px 24px;
+        display: flex;
+    }
+
+    @media (min-width: 1400px){
+        font-size: 16px; 
+        padding: 12px 52px;
+        gap: 64px;
+    }
+
+    .horas, .data{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+    }
+
+    .horas span:first-child{
+        color: #F76A56;
+        font-size: 18px;
+    }
+    .data span:first-child{
+        color: #F76A56;
+        font-size: 16px;
+    }
+
+}

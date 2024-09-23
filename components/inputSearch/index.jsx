@@ -26,7 +26,7 @@ export default function Search({books, getBookSelected}) {
     
 
     useEffect(()=>{
-       getBookSelected(filterBooks)
+       getBookSelected(filterBooks, searchText)
     },[searchText])
 
     // console.log(filterBooks)

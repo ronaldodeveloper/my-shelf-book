@@ -1,11 +1,16 @@
 
 @import url("../assets/icomoon.css");
+@import url('https://fonts.cdnfonts.com/css/digital-numbers');
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.digital-numbers{
+    font-family: 'Digital Numbers', sans-serif !important;
 }
 
 body{
@@ -23,12 +28,13 @@ body{
 
 .main{
     flex: 1;
-    overflow-y: hidden;
+    overflow: hidden;
     
 
     @media (min-width: 992px) {
         margin-left: 340px;
         margin-top: 32px;
+        max-width: calc(100vw - 340px);
     }
 }
 
@@ -58,4 +64,26 @@ body{
         height: auto;
         display: flex;
     }
+
 }
+
+.swiper.carouselBanner{
+    margin: 0;
+    .swiper-pagination{
+        width: auto;
+        left: 32px;
+    }
+
+    .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+        background-color: #8A317C;
+        border: 1px solid white;
+        opacity: 1;
+
+        &-active{
+            background-color: white;
+        }
+    }
+}
+
